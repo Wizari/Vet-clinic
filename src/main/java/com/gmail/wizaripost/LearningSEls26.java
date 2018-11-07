@@ -4,15 +4,14 @@ public class LearningSEls26 {
     public static void main(String[] args) {
 
 
-       /* Чет не пашет(( в инете нашел и по всякому потыкал. Я так понял с массивами не хочет работать.
-        int [] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 44, 256};
-        String barr = "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "44", "256";
-
-        String c = new StringBuffer(arr).reverse().toString();
-       System.out.println(c);*/
 
 
-/* Пришлось самому делать) */
+        String g = "abcdxyz";
+
+        String c = new StringBuffer(g).reverse().toString();
+       System.out.println(c);
+
+
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 44, 256};
 
         for (int i = arr.length - 1; i >= 0; i--) {
