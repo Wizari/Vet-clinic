@@ -31,6 +31,7 @@ public class LearningSEls26 {
         }
 
 //        String g = "abcdxyz";
+
         User user2 = new User();
         user2.setAge(15);
         System.out.println(user2.getAge());

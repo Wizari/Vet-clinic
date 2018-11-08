@@ -7,6 +7,9 @@ public static void main(String[] args) {
     System.out.println(a);
     char b = 'c'+1;
     System.out.println(b);
+    {
+//        method3 method31 = new method3();
+    }
 
 
 
