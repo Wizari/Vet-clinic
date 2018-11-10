@@ -1,18 +1,13 @@
 package com.gmail.wizaripost;
 
-import java.util.ArrayList;
-
 public class LearningSEls26point2 {
 
     public static void main(String[] args) {
         String pack = "1234567890";
         char[] cArr = pack.toCharArray();
         int add = cArr.length % 2;
-//        Почему тут нужно по + 1 делать я не поняль?
-// без него не корректно работает - на 1 символ меньше выдает
-//        cArr.length - разве не  должен быть равен 10 при 10 символах?
         char[] temp = new char[(((cArr.length / 2) + add) + 1)];
-        char[] temp2 = new char[((cArr.length / 2)+1)];
+        char[] temp2 = new char[((cArr.length / 2) + 1)];
 
         int t = 0;
         for (int b = 0; t < temp.length - 1; b += 2) {
@@ -22,18 +17,18 @@ public class LearningSEls26point2 {
         System.out.println(temp);
         int t2 = 0;
         for (int b2 = 1; t2 < temp2.length - 1; b2 += 2) {
-             t2++;
-             temp2[t2] = cArr[b2];
+            t2++;
+            temp2[t2] = cArr[b2];
         }
         System.out.println(temp2);
-        }
     }
+}
 
 //            if (t == temp.length) {
 //                System.out.println(temp);
 
 //            }
-        //        ArrayList<Character> temp = new ArrayList<>((pack.length()/2+add));
+//        ArrayList<Character> temp = new ArrayList<>((pack.length()/2+add));
 //        ArrayList<Character> temp2 = new ArrayList<>((pack.length()/2));
 //        for (int b = 1; b <= cArr.length - 1; b += 2) {
 //            for (int t = 0; t <= temp2.length - 1; t++)
